@@ -10,6 +10,7 @@ public class Facebook {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.facebook.com/");
 
+
         driver.manage().window().maximize();
         //navigate to fb.com
         //click on create new account
