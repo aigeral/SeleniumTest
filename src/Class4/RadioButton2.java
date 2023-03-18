@@ -16,10 +16,13 @@ public class RadioButton2 {
         driver.get("http://practice.syntaxtechs.net/basic-radiobutton-demo.php");
 
 
+    //find all the age group radio buttons
+        //the Xpath here is common to all the WebElements that have age group
         List<WebElement> radioBtns = driver.findElements(By.xpath("//input[@name='ageGroup']"));
-        //iterate
+        //iterate over the list to see ur desired one
         for (WebElement radioBtn : radioBtns) {
             String age = radioBtn.getAttribute("value");
+            //if the value of the WebElement is 5-10 click on it
             if (age.equalsIgnoreCase("0 - 5")) {
                 radioBtn.click();
             }

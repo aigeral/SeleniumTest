@@ -24,7 +24,7 @@ public class RadioBts {
         boolean isSelectedmale = maleBTn.isSelected();
         System.out.println("the male button is selected " + isSelectedmale);
         //if the radio button is not selected click on it
-        if (isSelectedmale) {
+        if (!isSelectedmale) {
             maleBTn.click();
         }
         //check if the radio button is selected after the click
