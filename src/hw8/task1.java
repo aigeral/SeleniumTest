@@ -42,6 +42,7 @@ public class task1 {
                 System.out.println(id);
                 System.out.println("Row of the ID is "+i+1);
                 driver.findElement(By.xpath("//table[@id='resultTable']/tbody/tr["+(i+1)+"]/td[1]")).click();
+
             }
 
         }
